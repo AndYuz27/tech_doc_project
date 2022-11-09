@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+    <!--Только в учебных целях-->
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="mainStyle.css">
@@ -17,17 +19,26 @@
             <h1>JS Bank</h1>
 
             <nav>
-                <a class="nav_link" href="#" target="_blank">О нас</a>
-                <a class="nav_link" href="#" target="_blank">Кредит</a>
-                <a class="nav_link" href="#" target="_blank">Карты</a>
-                <a class="nav_link" href="#" target="_blank"><b>стать клиентом</b></a>
-                <a class="nav_link" href="#" target="_blank">мобильное приложение</a>
-                <button class="nav_btn" type="button" onclick="alert('Sample Text')"   ><b>Авторизоваться</b></button>
+                <a class="nav_link" href="#" target="mainPage">О нас</a>
+                <a class="nav_link" href="#" target="mainPage">Кредит</a>
+                <a class="nav_link" href="#" target="mainPage">Карты</a>
+                <a class="nav_link" href="#" target="mainPage"><b>стать клиентом</b></a>
+                <a class="nav_link" href="#" target="mainPage">мобильное приложение</a>
+                <a class="nav_link" href="Auth.html" target="mainPage"><b>Авторизоваться</b></a>
+                <a class="nav_link" href="personal_account.html" target="mainPage"><b>онлайн банк</b></a>
+
+                <!-- <button class="nav_btn" type="button" onclick="alert('Sample Text')"   ></button> -->
             </nav>
         </header>
         <main>
-            
+            <iframe src="Home.html" frameborder="0" name="mainPage"></iframe>
         </main>
     </div>
+    <script>
+        function dir_loc(e){
+            window.location = e
+        }
+        
+    </script>
 </body>
 </html>

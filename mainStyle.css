@@ -47,3 +47,19 @@ nav{
 a{
     text-decoration: none
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+    width: 1024px;
+    height: 800px;
+}
+@media screen and (max-width: 980px) {
+    iframe{
+        width: 640px;
+        height: 800px;
+    }
+}
